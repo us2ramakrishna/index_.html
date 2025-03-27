@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dheeraj Tripathi - Data Analyst Portfolio</title>
+    <title>Dheeraj Tripathi - Genetic Medicine & Oncology Data Analyst</title>
     <style>
         /* Reset default margin and padding */
         * {
@@ -15,126 +15,200 @@
         /* Basic styling for the body */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
-            padding: 20px;
         }
 
-        /* Header section */
+        /* Header section with background image */
         header {
             text-align: center;
-            padding: 20px;
-            background-color: #0074D9;
+            padding: 80px 20px;
+            background: url('https://source.unsplash.com/1600x900/?dna,genomics,medicine') no-repeat center center/cover;
             color: #fff;
+            position: relative;
+        }
+
+        /* Dark overlay for better text visibility */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        header h1, header p, .logo-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Logo styling */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .logo-container img {
+            height: 50px;
         }
 
         /* Main content section */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Project cards */
+        h2 {
+            color: #0074D9;
+            border-bottom: 2px solid #0074D9;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Skills section */
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills li {
+            background: #0074D9;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Project section */
         .project-card {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 15px;
             margin-bottom: 20px;
             border-radius: 5px;
+            background: #fafafa;
+            transition: 0.3s;
         }
 
-        /* Footer section */
+        .project-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card a {
+            color: #0074D9;
+            text-decoration: none;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #0074D9;
             color: #fff;
+            margin-top: 20px;
         }
 
-        /* Button styling */
-        .link-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #28a745; /* Green color */
-            border: none;
-            border-radius: 5px;
+        footer a {
+            color: #ffdd57;
             text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-left: 10px; /* Add space between SQL and button */
         }
 
-        .link-button:hover {
-            background-color: #218838; /* Darker green on hover */
+        /* Background images for sections */
+        .genomic-analysis {
+            background: url('https://source.unsplash.com/1600x900/?genomics,dna,science') no-repeat center center/cover;
+            padding: 50px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <!-- Header with Background Image and Logos -->
     <header>
-        <h1>Dheeraj Tripathi</h1>
-        <p>Data Analyst | Healthcare & Medicine Expertise | AI Enthusiast|Vrindavan </p>
+        <h1>Genetic Medicine & Oncology Data Analyst</h1>
+        <p>Using ChatGPT & DeepSeek for AI-Driven Insights</p>
+        
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo">
+            <img src="https://deepseek.com/logo.png" alt="DeepSeek Logo">  <!-- Replace with actual DeepSeek logo URL -->
+        </div>
     </header>
 
+    <!-- Genomic Data Analysis Section -->
+    <div class="genomic-analysis">
+        AI in Genomics | Precision Medicine | Oncology Data Insights
+    </div>
+
+    <!-- Main Content -->
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>A passionate Data Analyst with a background in healthcare and pharmaceutical sciences. I have combined my B.Pharmacy knowledge with a solid understanding of data science, leveraging my skills to develop impactful projects in healthcare and beyond.</p>
+            <p>I specialize in **Genomic Data Analysis, AI-powered Precision Medicine, and Oncology Data Science**. With expertise in **Python, R, Machine Learning, NLP, and Deep Learning**, I apply **ChatGPT & DeepSeek AI** to transform healthcare analytics.</p>
         </section>
 
-        <section id="skills">
+        <section class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Data Cleaning</li>
-                <li>Exploratory Data Analysis</li>
-                <li>Machine Learning</li>
-                <li>Google Colab</li>
-                <li>Kaggle</li>
-                <li>GitHub</li>
-                <li>SQL Using AI <a href="https://github.com/us2ramakrishna/sql-query" class="link-button">View Project</a></li>
-                <li>Data Analytics using AI <a href="https://colab.research.google.com/drive/16WWqGtFZkmEtQr1UZC4vW_YNCNrcbu7y?usp=sharing" class="link-button">View Project</a></li>
-                <li>MongoDB</li>
-                <li>PowerBI</li>
-                <li>Tableau</li>
-                <li>Deep Learning (Basic)</li>
-                <li>NLP (Basic)</li>
-                <li>Research Paper Data Analysis</li>
-                <!-- Add more skills here -->
+                <li>AI in Drug Discovery</li>
+                <li>Genomics & Precision Medicine</li>
+                <li>Oncology Data Analysis</li>
+                <li>Clinical Data Science</li>
+                <li>Machine Learning & Deep Learning</li>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Python & R for Healthcare Analytics</li>
+                <li>Data Visualization & EDA</li>
             </ul>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            
             <div class="project-card">
-                <h3>Liver Disease Prediction Model</h3>
-                <p>Developed a machine learning model to predict liver diseases using patient data and laboratory test results.</p>
-                <p>Project URL: <a href="https://drive.google.com/file/d/13cVgRpiXeiz-geDlD0HgHG1Bn7aQQrfZ/view?usp=drivesdk">View Project</a></p>
-                <p>GitHub Repository: <a href="https://github.com/us2ramakrishna/Portfolio-stuff--/blob/main/liver_disease_prediction_.ipynb">View on GitHub</a></p>
+                <h3>🔬 Thyroid Disorder Prediction</h3>
+                <p>Developed a machine learning model to predict **thyroid disorders** using patient datasets.</p>
+                <p><a href="https://github.com/us2ramakrishna/Portfolio-stuff--/blob/main/thyroid_prediction_.ipynb" target="_blank">View on GitHub</a></p>
             </div>
 
             <div class="project-card">
-                <h3>Thyroid Disease Prediction Model</h3>
-                <p>Implemented a machine learning model to predict thyroid disorders, leveraging a dataset of patient records to enhance diagnostic accuracy.</p>
-                <p>GitHub Repository: <a href="https://github.com/us2ramakrishna/Portfolio-stuff--/blob/main/thyroid_prediction_.ipynb">View on GitHub</a></p>
+                <h3>🧬 Oncology Genomic Analysis</h3>
+                <p>Analyzed genetic markers in cancer patients to improve treatment recommendations.</p>
             </div>
 
             <div class="project-card">
-                <h3>Vaccine Adverse Reaction Prediction</h3>
-                <p>Predicted adverse reactions to vaccines using machine learning algorithms, providing insights into vaccine safety.</p>
-                <p>Project URL: <a href="https://drive.google.com/file/d/13cVgRpiXeiz-geDlD0HgHG1Bn7aQQrfZ/view?usp=drivesdk">View Project</a></p>
+                <h3>💊 AI-Powered Drug Discovery</h3>
+                <p>Developed AI models to predict potential **drug candidates for rare diseases**.</p>
             </div>
-            
+
+            <div class="project-card">
+                <h3>🩺 Liver Disease Prediction</h3>
+                <p>Created an AI model to predict **liver disease** using patient diagnostic data.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>🦠 Cancer Detection Using AI</h3>
+                <p>Implemented deep learning for **cancer classification** based on histopathological images.</p>
+            </div>
         </section>
     </div>
 
+    <!-- Footer with Contact Details -->
     <footer>
-        <p>Contact: us2ramakrishna@gmail.com | Phone: 9810189953 | LinkedIn: <a href="https://www.linkedin.com/in/dheeraj-tripathi">LinkedIn Profile</a></p>
+        <p>📧 Email: us2ramakrishna@gmail.com | 📞 Phone: 9810189953</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/dheeraj-tripathi-33b7b3277" target="_blank">LinkedIn Profile</a></p>
     </footer>
 </body>
 </html>
